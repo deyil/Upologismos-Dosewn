@@ -6,23 +6,12 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#include <iostream>
-using namespace std;
+#include "initialize.h"
 
-int y = 1;
-float Kef_arx;
-float Tokos;
-int years;
-float dosi_statheri;
-float Kef_meiwmeno;
-
-float epitokio();
 float epitokio(){return (Tokos*Kef_meiwmeno)/100;}
 
-float dosi();
 float dosi(){return (dosi_statheri + epitokio());}
 
-void calculation();
 void calculation(){
     
     cout<< y++ << "os " << "xronos " << "\n";
@@ -33,7 +22,6 @@ void calculation(){
     Kef_meiwmeno = Kef_meiwmeno - dosi_statheri;
 }
 
-void input();
 void input(){
     cout << "Daneizomeno Kefalaio: ";
     cin >> Kef_arx; 
