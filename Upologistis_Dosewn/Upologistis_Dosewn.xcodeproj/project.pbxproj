@@ -28,6 +28,7 @@
 		08398C49149A1AEA002CF10B /* Upologistis_Dosewn */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Upologistis_Dosewn; sourceTree = BUILT_PRODUCTS_DIR; };
 		08398C4D149A1AEA002CF10B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		08398C4F149A1AEA002CF10B /* Upologistis_Dosewn.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Upologistis_Dosewn.1; sourceTree = "<group>"; };
+		08398C56149A3F02002CF10B /* initialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = initialize.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 			children = (
 				08398C4D149A1AEA002CF10B /* main.cpp */,
 				08398C4F149A1AEA002CF10B /* Upologistis_Dosewn.1 */,
+				08398C56149A3F02002CF10B /* initialize.h */,
 			);
 			path = Upologistis_Dosewn;
 			sourceTree = "<group>";
@@ -161,6 +163,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -168,6 +171,7 @@
 		08398C54149A1AEA002CF10B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -175,6 +179,7 @@
 		08398C55149A1AEA002CF10B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
