@@ -8,30 +8,33 @@
 
 #include "initialize.h"
 
-float epitokio(){return (Tokos*Kef_meiwmeno)/100;}
+float epitokio(){return (Tokos*Kef_meiwmeno)/400;}
 
 float dosi(){return (dosi_statheri + epitokio());}
 
 void calculation(){
-    
-    cout<< y++ << "os " << "xronos " << "\n";
-    cout<< "Ypoloipo Kefalaio :" << Kef_meiwmeno << "\n";
-    cout<< "Statheri dosi :" << dosi_statheri << "\n";
-    cout<< "Tokos :" << epitokio() << "\n";
-    cout<< "Sunoliki plirwtea dosi :" << dosi() << "\n\n";
-    Kef_meiwmeno = Kef_meiwmeno - dosi_statheri;
+    cout<< y++ << "ος " << "Χρονος " << "\n";
+    int x = 0;
+    do {
+        x++;
+        cout<< "  Υπολοιπο Κεφαλαιο :" << Kef_meiwmeno << "\n";
+        cout<< "  Σταθερη Δοση :" << dosi_statheri << "\n";
+        cout<< "  Τοκος :" << epitokio() << "\n";
+        cout<< "  Συνολικη Πληρωτεα Δοση :" << dosi() << "\n\n";
+        Kef_meiwmeno = Kef_meiwmeno - dosi_statheri;
+    } while (x < 4);
 }
 
 void input(){
-    cout << "Daneizomeno Kefalaio: ";
+    cout << "Δανειζομενο Κεφαλαιο: ";
     cin >> Kef_arx; 
-    cout << "Tokos: ";
+    cout << "Τοκος: ";
     cin >> Tokos;
-    cout << "Xronia: ";
+    cout << "Χρονια: ";
     cin >> years;
     cout << "\n";
     
-    dosi_statheri = (Kef_arx/years);
+    dosi_statheri = (Kef_arx/(4*years));
     Kef_meiwmeno = Kef_arx;
 }
 
